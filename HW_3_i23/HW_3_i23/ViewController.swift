@@ -12,6 +12,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("--------Задание 1----------")
+        print("Сумма чисел", sum(10, 9))
+        print("Вычитание чисел", subs(300, -500.0))
+        print("Умножение чисел", mult(300, -500.0))
+        print("Деление чисел", dev(300, -500.0))
+        print("--------Задание 2----------")
+        print("Сумма цифр в числе: ", summOfAllValues(1234))
+        print("--------Задание 3----------")
+        stringCompare(firstString: "Мы одинаковые строки", secondString: "Не одинаковые строки")
+        print("--------Задание 5----------")
+        print("Возведение в степень \(exponential(num: 10, power: 4))")
+        print("--------Задание 6----------")
+        print("Факториал: \(fuct(f: 5))")
+        
+        
+        
+    }
         //1. Универсальные функции сложения, вычитания, умножения и деления (перегрузка функций)
         
         // Перегрузка функции сложения
@@ -38,7 +55,7 @@ class ViewController: UIViewController {
         
         // пример суммы
         
-        print("Сумма чисел", sum(300, -500))
+        
             
         // Перегрузка функци вычитания
     
@@ -67,7 +84,7 @@ class ViewController: UIViewController {
             }
         // пример вычитания
         
-        print("Вычитание чисел", subs(300, -500.0))
+//        print("Вычитание чисел", subs(300, -500.0))
         
         // Перегрузка функци умножения
         
@@ -97,7 +114,7 @@ class ViewController: UIViewController {
         
         // пример умножения
         
-        print("Умножение чисел", mult(300, -500.0))
+//        print("Умножение чисел", mult(300, -500.0))
         
         
         // Перегрузка функци деления
@@ -125,7 +142,7 @@ class ViewController: UIViewController {
         
         // пример деления
         
-        print("Деление чисел", dev(300, -500.0))
+//        print("Деление чисел", dev(300, -500.0))
         
         
         
@@ -149,8 +166,8 @@ class ViewController: UIViewController {
             return sumOfNumbers
         }
         
-        print("--------------------")
-        print("Сумма цифр в числе: ", summOfAllValues(1234))
+//        print("--------------------")
+//        print("Сумма цифр в числе: ", summOfAllValues(1234))
         
         //3. Функция сравнения строк - "авб" больше "ввш"
         //a < b
@@ -164,15 +181,15 @@ class ViewController: UIViewController {
             }else {print("Первая строка:\(firstString)"," равнозначна второй строка\(secondString)")}
         }
         
-        print("--------------------")
-        stringCompare(firstString: "Мы одинаковые строки", secondString: "Не одинаковые строки")
+//        print("--------------------")
+//        stringCompare(firstString: "Мы одинаковые строки", secondString: "Не одинаковые строки")
         
         
         //5. Функция возведения в степень с дефолтным параметром
         //func exponential(num: Int, power: Int = 4) {
         //}
         
-        func exponential(num: Int, power: Int)-> Int{
+        func exponential(num: Int, power: Int = 2)-> Int{
             
             
             let exp = pow(Double(num), Double(power))
@@ -180,8 +197,8 @@ class ViewController: UIViewController {
             
         }
 
-        print("--------------------")
-        print("Возведение в степень \(exponential(num: 10, power: 4))")
+//        print("--------------------")
+//        print("Возведение в степень \(exponential(num: 10, power: 4))")
     
     
     
@@ -199,8 +216,8 @@ class ViewController: UIViewController {
         }
         return num
     }
-        print("--------------------")
-        print("Факториал: \(fuct(f: 5))")
+//        print("--------------------")
+//        print("Факториал: \(fuct(f: 5))")
     
     
     //4. Циклический вызов функций - поломать приложение
@@ -222,7 +239,7 @@ class ViewController: UIViewController {
 //    print(breackAppByCycle(cond: 1))
     
     
-    }
+    
 
 
 }
